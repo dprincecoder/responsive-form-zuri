@@ -15,7 +15,6 @@ form.addEventListener("submit", (e) => {
 //set error functions
 const setError = (element, message) => {
   const inputControl = element.parentElement;
-  console.log(inputControl);
   const errorDisply = inputControl.querySelector(".error-message");
 
   inputControl.classList.add("error-message");
@@ -72,5 +71,4 @@ const validateInputs = () => {
   } else {
     setSuccess(password);
   }
-  console.log(firstnameValue, lastnameValue, emailValue, passwordValue);
 };
